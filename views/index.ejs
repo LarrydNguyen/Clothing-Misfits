@@ -1,11 +1,13 @@
 <%- include('partials/header') -%>
-
-<main class="container">
-    <div class="row justify-content-around mt-5">
-        <a href="/login" class="col-3 btn btn-primary"> Login</a>
-        <a href="/signup" class="col-3 btn btn-primary"> Signup</a>
+<main>
+    <div
+    class="bg-image d-flex flex-row-reverse"
+    style="background-image: url('./imgs/front-page-picture.jpg');">
+        <div class="color-overlay d-flex justify-content-around align-items-center">
+            <a href="/login" class="col-3 btn btn-primary">Login</a>
+            <a href="/signup" class="col-3 btn btn-primary">Signup</a>
+        </div>
     </div>
-</main>
-    
+</main> 
 
 <%- include('partials/footer') -%>
