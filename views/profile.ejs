@@ -1,6 +1,6 @@
 <%- include('partials/header') -%>
 <%- include('partials/navbar') -%>
-<div class="container` rounded-3">
+<!-- <div class="container rounded-3 bg-zinc-300">
   <div class="row justify-content-center mt-5">
       <div class="row list-unstyled mt-5">
         <div>
@@ -27,15 +27,60 @@
             <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
           </form>
         </div>
-
         <% } %>
       </div>
-      <div class="">
-        <ul class="row list-unstyled">
-        <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-12 col-6 col-md-4 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="feed-img rounded mx-auto d-block img-fluid img-thumbnail " src="<%= posts[i].image%>">
-            </a>
-          </li>
+  </div>
+</div> -->
+<!--new upload card-->
+<% if (paramsID == user.id) { %>
+<form action="/post/createPost" enctype="multipart/form-data" method="POST">
+  <div  class="row justify-content-center mt-5"> 
+    <div class="card w-1/2 bg-base-200 shadow-xl">
+      <div class="card-body">
+        <div class="flex lg:flex-row md:flex-col sm:flex-col">
+          <div class="flex w-full md:flex-col sm:flex-col">
+            <div class="flex justify-center items-center w-full">
+              <label for="dropzone-file" class="flex flex-col justify-center items-center w-full h-64 bg-neutral-300 rounded-lg border-2 border-neutral-300 border-dashed cursor-pointer dark:hover:bg-zinc-600 dark:bg-neutral-600 hover:bg-zinc-100 dark:border-neutral-300 dark:hover:border-zinc-300 dark:hover:bg-zinc-100">
+                  <div class="flex flex-col justify-center items-center">
+                      <img class="object-contain h-90 w-90" src="/imgs/upload-90.png" alt="">
+                      <p class="mb-2 text-sm text-neutral-500 dark:text-neutral-500"><span class="font-semibold">Click to upload</span></p>
+                      <p class="text-xs text-neutral-500 dark:text-neutral-500"> PNG or JPG  (MAX. 10MB)</p>
+                  </div>
+                  <input id="dropzone-file" type="file" class="hidden" id="imageUpload" name="file" />
+              </label>
+          </div> 
+            <div class="mt-2">
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</butto>
+            </div>
+          </div>
+        </form>
         <% } %>
+          <div class="divider lg:divider-horizontal"></div>
+          <div class="flex w-full md:flex-col sm:flex-col">
+            <div>
+              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+            </div>
+            <div class="mt-2">
+              <input type="text" placeholder="Add your Title" class="bg-base-100 input input-lg w-full max-w-xs" id="title" name="title"/>
+            </div>
+            <div class="divider"></div>
+            <textarea class="textarea textarea-primary" placeholder="List your brands" id="caption" name="caption"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="mx-5">
+<ul class="row list-unstyled">
+<% for(var i=0; i<posts.length; i++) {%>
+  <li class="col-12 col-6 col-md-4 justify-content-between mt-5">
+    <a href="/post/<%= posts[i]._id%>">
+      <img class="feed-img rounded mx-auto d-block img-fluid img-thumbnail " src="<%= posts[i].image%>">
+    </a>
+  </li>
+<% } %>
+</div>
