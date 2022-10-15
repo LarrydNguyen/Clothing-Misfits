@@ -22,7 +22,7 @@
               <li class="mt-1 pb-2 border-bottom">
                 <% for (let i = 0; i < users.length; i++) { %>
                   <% if (String(users[i]._id) == post.user) { %>
-                    <a class="fw-bold text-reset text-decoration-none" href="/profile/<%= users[i]._id %>"> <%= users[i].userName %> </a>
+                    <a class="fw-bold text-reset text-decoration-none" href="/profile/<%= users[i]._id %>"> <%= users[i].userName %>'s Brands </a>
                   <% } %>
                 <% } %>
                 <span><%= post.caption %></span>
