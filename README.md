@@ -1,6 +1,12 @@
 # Clothing Misfits
 Clothing Misfits is an image sharing and social media platform to discover personal fashion. Users have the ability to login and start browsing right away, liking and commenting on their favorite outfits. Having a profile allows users to have individual collections of posts that interest them. 
 
+Click here to see the website! : https://clothingmisfits.up.railway.app/
+
+<br>
+
+![gif](https://user-images.githubusercontent.com/95257196/196064786-2e3d0b85-183e-4d56-bdc5-9a4787966e5a.gif)
+
 # Client:
 **Tech used**: HTML, CSS, JavaScript, TailwindCSS and DaisyUI
 
