@@ -555,9 +555,9 @@ html {
   width: 100%;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 480px;
+    max-width: 640px;
   }
 }
 
@@ -2590,7 +2590,7 @@ body[dir="rtl"] .checkbox:checked,
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .sm\:flex-col {
     flex-direction: column;
   }
