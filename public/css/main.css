@@ -2222,10 +2222,6 @@ body[dir="rtl"] .checkbox:checked,
   height: 2rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -2591,6 +2587,10 @@ body[dir="rtl"] .checkbox:checked,
 }
 
 @media (min-width: 640px) {
+  .sm\:max-h-96 {
+    max-height: 24rem;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -2601,6 +2601,10 @@ body[dir="rtl"] .checkbox:checked,
 }
 
 @media (min-width: 768px) {
+  .md\:max-h-96 {
+    max-height: 24rem;
+  }
+
   .md\:flex-col {
     flex-direction: column;
   }
@@ -2644,6 +2648,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:max-h-full {
+    max-height: 100%;
   }
 
   .lg\:flex-row {
