@@ -25,7 +25,7 @@ MongoDB made storing data in JSON-like documents dynamic schema easy.
 Cloudinary is and end-end image-and video-management solution for this website. It Provides a secure and comprehensive API for easily uploading media files from server-side code, directly from the browser or from a mobile app. 
 
 # Packages/Dependencies used
-bcrypt, cloudinary, connect-mongo, daisyui, dotenv, ejs, express, express-flash, express-session, method-overide, mongodb, mongoose, morgan, multer, nodemon, passport, passport-local, tailwindcss, validator
+bcrypt, cloudinary, connect-mongo, daisyui, dotenv, ejs, express, express-flash, express-session, method-overide, mongodb, mongoose, morgan, multer, nodemon, passport, passport-local, tailwindcss, validator.
 
 # Install
 
